@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Luxe Haven | Luxury Living Experience</title>
-        <meta name="description" content="Experience unrivaled luxury living at Luxe Haven with our collection of 22 exceptional rooms for your perfect stay." />
+        <title>Aaram Luxury Living | Premium Accommodation Experience</title>
+        <meta name="description" content="Experience unrivaled luxury living at Aaram Luxury Living with our collection of 22 exceptional rooms for your perfect stay." />
       </Helmet>
       <main>
         <Hero />
