@@ -11,27 +11,27 @@ import {
 const galleryImages = [
   {
     src: "https://images.unsplash.com/photo-1551632811-561732d1e306",
-    alt: "Luxurious lobby"
+    alt: "Aaram Luxury Living elegant lobby"
   },
   {
     src: "https://images.unsplash.com/photo-1590073242678-70ee3fc28f17",
-    alt: "Dining area"
+    alt: "Aaram Luxury Living dining area"
   },
   {
     src: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7",
-    alt: "Swimming pool"
+    alt: "Aaram Luxury Living swimming pool"
   },
   {
     src: "https://images.unsplash.com/photo-1592229505726-ca121723b8ef",
-    alt: "Spa facility"
+    alt: "Aaram Luxury Living spa facility"
   },
   {
     src: "https://images.unsplash.com/photo-1544097935-e6b9524b0a22",
-    alt: "Fitness center"
+    alt: "Aaram Luxury Living fitness center"
   },
   {
     src: "https://images.unsplash.com/photo-1620332372374-f108c53d2e03",
-    alt: "Bar and lounge"
+    alt: "Aaram Luxury Living bar and lounge"
   }
 ];
 

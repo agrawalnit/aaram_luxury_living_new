@@ -7,7 +7,7 @@ const BookingCTA = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1606402179428-a57976d71fa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-          alt="Luxurious property view" 
+          alt="Aaram Luxury Living property view" 
           className="object-cover w-full h-full opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/90 to-[#0A0A0A]/90"></div>
