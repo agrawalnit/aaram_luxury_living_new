@@ -36,7 +36,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4 border-b border-[#1E1E1E]">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-playfair font-bold tracking-wide text-[#D4AF37]">Luxe Haven</span>
+              <span className="text-2xl font-playfair font-bold tracking-wide text-[#D4AF37]">Aaram Luxury Living</span>
             </Link>
           </div>
           
@@ -97,7 +97,7 @@ const Header = () => {
           >
             <div className="p-6">
               <div className="flex justify-between items-center mb-8">
-                <span className="text-xl font-playfair font-bold tracking-wide text-[#D4AF37]">Luxe Haven</span>
+                <span className="text-xl font-playfair font-bold tracking-wide text-[#D4AF37]">Aaram Luxury Living</span>
                 <Button 
                   variant="ghost" 
                   size="icon" 

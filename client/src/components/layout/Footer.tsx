@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div>
-            <h3 className="text-2xl font-playfair font-bold text-[#D4AF37] mb-6">Luxe Haven</h3>
+            <h3 className="text-2xl font-playfair font-bold text-[#D4AF37] mb-6">Aaram Luxury Living</h3>
             <p className="text-[#CCCCCC] mb-6">
               Redefining luxury living with our exclusive collection of premium rooms and exceptional services.
             </p>
@@ -80,7 +80,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-[#1E1E1E] text-center md:flex md:justify-between md:text-left">
           <p className="text-[#CCCCCC] text-sm">
-            &copy; {new Date().getFullYear()} Luxe Haven. All rights reserved.
+            &copy; {new Date().getFullYear()} Aaram Luxury Living. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <a href="#" className="text-[#CCCCCC] hover:text-[#D4AF37] text-sm mx-3 md:mx-0 md:ml-6">Privacy Policy</a>

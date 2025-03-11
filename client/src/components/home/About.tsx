@@ -15,7 +15,7 @@ const About = () => {
             <span className="text-[#D4AF37] uppercase tracking-widest text-sm font-medium">Our Story</span>
             <h2 className="font-playfair font-bold text-3xl md:text-4xl mt-2 mb-6">A Legacy of Luxury</h2>
             <p className="text-[#CCCCCC] mb-6">
-              Luxe Haven was founded with a singular vision: to create an unparalleled living experience that combines the comfort of home with the indulgence of a five-star hotel. Our exclusive property stands as a testament to craftsmanship, attention to detail, and a passion for luxury.
+              Aaram Luxury Living was founded with a singular vision: to create an unparalleled living experience that combines the comfort of home with the indulgence of a five-star hotel. Our exclusive property stands as a testament to craftsmanship, attention to detail, and a passion for luxury.
             </p>
             <p className="text-[#CCCCCC] mb-8">
               Each of our 22 meticulously designed rooms offers a unique experience, catering to both short stays and extended residences. From hand-selected furnishings to personalized concierge services, we've crafted every aspect of your stay to exceed expectations.
