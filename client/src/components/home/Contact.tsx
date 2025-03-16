@@ -76,7 +76,7 @@ const Contact = () => {
             </p>
 
             <div className="space-y-6 mb-8">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.251582801268!2d77.0947219147705!3d28.42575378240603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d047a922998d1%3A0x91d28406e287e64!2sSector%2042%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1700207875343!5m2!1sen!2sin" width="100%" height="300" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.5773803826377!2d77.09018799999999!3d28.4510565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18e0fd9c68cf%3A0xe53c6228c915b02!2sPlot%20803%2C%20Sector%2042%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1700495647404!5m2!1sen!2sin" width="100%" height="300" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
               <div className="flex items-start">
                 <MapPin className="text-[#D4AF37] w-8" />
