@@ -88,7 +88,7 @@ const Contact = () => {
                 <Phone className="text-[#D4AF37] w-8" />
                 <div className="ml-4">
                   <h3 className="text-[#F5F5F5] font-medium">Phone</h3>
-                  <a href="tel:+919876543210" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-colors">+91 98765 43210</a>
+                  <a href="tel:+919284388074" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-colors">+91 92843 88074</a>
                 </div>
               </div>
               
@@ -96,7 +96,7 @@ const Contact = () => {
                 <Mail className="text-[#D4AF37] w-8" />
                 <div className="ml-4">
                   <h3 className="text-[#F5F5F5] font-medium">Email</h3>
-                  <a href="mailto:info@aaramluxuryliving.com" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-colors">info@aaramluxuryliving.com</a>
+                  <a href="mailto:parth.babbar@aaramluxury.com" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-colors">parth.babbar@aaramluxury.com</a>
                 </div>
               </div>
             </div>

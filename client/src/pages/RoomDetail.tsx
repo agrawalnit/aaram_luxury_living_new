@@ -268,7 +268,7 @@ const RoomDetail = () => {
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <Phone className="text-[#D4AF37] mr-3" size={18} />
-                      <a href="tel:+919876543210" className="text-[#F5F5F5] hover:text-[#D4AF37] transition-colors">+91 98765 43210</a>
+                      <a href="tel:+919284388074" className="text-[#F5F5F5] hover:text-[#D4AF37] transition-colors">+91 92843 88074</a>
                     </div>
                     <div className="flex items-center">
                       <Mail className="text-[#D4AF37] mr-3" size={18} />
