@@ -24,7 +24,7 @@ type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 const Contact = () => {
   const { toast } = useToast();
-  
+
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -74,16 +74,18 @@ const Contact = () => {
             <p className="text-[#CCCCCC] mb-8">
               We're here to answer any questions about our luxury accommodations. Whether you're planning a stay or interested in learning more, our dedicated team is ready to assist you.
             </p>
-            
+
             <div className="space-y-6 mb-8">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.251582801268!2d77.0947219147705!3d28.42575378240603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d047a922998d1%3A0x91d28406e287e64!2sSector%2042%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1700207875343!5m2!1sen!2sin" width="100%" height="300" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
               <div className="flex items-start">
                 <MapPin className="text-[#D4AF37] w-8" />
                 <div className="ml-4">
                   <h3 className="text-[#F5F5F5] font-medium">Location</h3>
-                  <p className="text-[#CCCCCC]">123 Luxury Avenue, Prestigious District, City, 10001</p>
+                  <p className="text-[#CCCCCC]">Sector 42, Gurugram, Haryana 122001</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <Phone className="text-[#D4AF37] w-8" />
                 <div className="ml-4">
@@ -91,7 +93,7 @@ const Contact = () => {
                   <a href="tel:+919284388074" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-colors">+91 92843 88074</a>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <Mail className="text-[#D4AF37] w-8" />
                 <div className="ml-4">
@@ -100,7 +102,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-full bg-[#2A2A2A] flex items-center justify-center text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all">
                 <Facebook size={18} />
@@ -116,7 +118,7 @@ const Contact = () => {
               </a>
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -162,7 +164,7 @@ const Contact = () => {
                     )}
                   />
                 </div>
-                
+
                 <FormField
                   control={form.control}
                   name="subject"
@@ -180,7 +182,7 @@ const Contact = () => {
                     </FormItem>
                   )}
                 />
-                
+
                 <FormField
                   control={form.control}
                   name="message"
@@ -199,7 +201,7 @@ const Contact = () => {
                     </FormItem>
                   )}
                 />
-                
+
                 <Button 
                   type="submit" 
                   disabled={inquiryMutation.isPending}
