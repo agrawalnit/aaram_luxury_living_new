@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -75,32 +76,13 @@ const Contact = () => {
               We're here to answer any questions about our luxury accommodations. Whether you're planning a stay or interested in learning more, our dedicated team is ready to assist you.
             </p>
 
-
-              <div className="flex items-start">
-                <MapPin className="text-[#D4AF37] w-8" />
-                <div className="ml-4">
-                  <h3 className="text-[#F5F5F5] font-medium">Location</h3>
-                  <p className="text-[#CCCCCC]">Plot 803, Sector 42, Gurugram, Haryana 122001</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <Phone className="text-[#D4AF37] w-8" />
-                <div className="ml-4">
-                  <h3 className="text-[#F5F5F5] font-medium">Phone</h3>
-                  <a href="tel:+919284388074" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-colors">+91 92843 88074</a>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <Mail className="text-[#D4AF37] w-8" />
-                <div className="ml-4">
-                  <h3 className="text-[#F5F5F5] font-medium">Email</h3>
-                  <a href="mailto:parth.babbar@aaramluxury.com" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-colors">parth.babbar@aaramluxury.com</a>
-                </div>
+            <div className="flex items-start">
+              <MapPin className="text-[#D4AF37] w-8" />
+              <div className="ml-4">
+                <h3 className="text-[#F5F5F5] font-medium">Location</h3>
+                <p className="text-[#CCCCCC]">Plot 803, Sector 42, Gurugram, Haryana 122001</p>
               </div>
             </div>
-
           </motion.div>
 
           <motion.div
@@ -136,10 +118,9 @@ const Contact = () => {
                       <FormItem>
                         <FormLabel className="block text-[#F5F5F5] mb-2 text-sm">Email Address</FormLabel>
                         <FormControl>
-                          <Input 
+                          <Input
                             {...field}
-                            type="email" 
-                            className="w-full px-4 py-3 bg-[#2A2A2A] border border-[#1E1E1E] focus:border-[#D4AF37] outline-none text-[#F5F5F5] rounded-sm" 
+                            className="w-full px-4 py-3 bg-[#2A2A2A] border border-[#1E1E1E] focus:border-[#D4AF37] outline-none text-[#F5F5F5] rounded-sm"
                             placeholder="john@example.com"
                           />
                         </FormControl>
@@ -156,10 +137,10 @@ const Contact = () => {
                     <FormItem>
                       <FormLabel className="block text-[#F5F5F5] mb-2 text-sm">Subject</FormLabel>
                       <FormControl>
-                        <Input 
+                        <Input
                           {...field}
-                          className="w-full px-4 py-3 bg-[#2A2A2A] border border-[#1E1E1E] focus:border-[#D4AF37] outline-none text-[#F5F5F5] rounded-sm" 
-                          placeholder="Booking Inquiry"
+                          className="w-full px-4 py-3 bg-[#2A2A2A] border border-[#1E1E1E] focus:border-[#D4AF37] outline-none text-[#F5F5F5] rounded-sm"
+                          placeholder="What's this about?"
                         />
                       </FormControl>
                       <FormMessage />
