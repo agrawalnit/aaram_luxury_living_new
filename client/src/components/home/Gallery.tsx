@@ -10,28 +10,28 @@ import {
 // Gallery images
 const galleryImages = [
   {
-    src: "/images/IMG_5120-HDR.jpg",
-    alt: "Aaram Luxury Living premium accommodation"
+    src: "/images/IMG_5116-HDR.jpg",
+    alt: "Aaram Luxury Living elegant living space"
   },
   {
-    src: "/images/IMG_5120-HDR.jpg",
-    alt: "Aaram Luxury Living elegant room"
+    src: "/images/IMG_5138-HDR.jpg",
+    alt: "Aaram Luxury Living modern kitchen area"
   },
   {
-    src: "/images/IMG_5120-HDR.jpg",
-    alt: "Aaram Luxury Living comfortable space"
+    src: "/images/IMG_5144-HDR.jpg",
+    alt: "Aaram Luxury Living spacious bedroom"
   },
   {
-    src: "/images/IMG_5120-HDR.jpg",
-    alt: "Aaram Luxury Living modern design"
+    src: "/images/IMG_5150-HDR.jpg",
+    alt: "Aaram Luxury Living stylish interior design"
   },
   {
-    src: "/images/IMG_5120-HDR.jpg",
-    alt: "Aaram Luxury Living luxury experience"
+    src: "/images/IMG_5159-HDR.jpg",
+    alt: "Aaram Luxury Living premium furniture"
   },
   {
-    src: "/images/IMG_5120-HDR.jpg",
-    alt: "Aaram Luxury Living exquisite detail"
+    src: "/images/IMG_5177-HDR.jpg",
+    alt: "Aaram Luxury Living luxury accommodation"
   }
 ];
 

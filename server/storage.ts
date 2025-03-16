@@ -68,7 +68,7 @@ export class MemStorage implements IStorage {
         price: 25000, // ₹25,000 per person
         stayType: "long",
         priceUnit: "month",
-        imageUrl: "/images/room2.jpg",
+        imageUrl: "/images/IMG_5123-HDR.jpg",
         amenities: ["Twin Beds", "Full Kitchen", "Living Area", "High-Speed WiFi", "24/7 Concierge", "Room Service"],
         featured: false
       },
@@ -78,7 +78,7 @@ export class MemStorage implements IStorage {
         price: 50000, // ₹50,000
         stayType: "short",
         priceUnit: "month",
-        imageUrl: "/images/room3.jpg",
+        imageUrl: "/images/IMG_5135-HDR.jpg",
         amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
         featured: false
       },
@@ -88,7 +88,7 @@ export class MemStorage implements IStorage {
         price: 25000, // ₹25,000 per person
         stayType: "short",
         priceUnit: "month",
-        imageUrl: "/images/room4.jpg",
+        imageUrl: "/images/IMG_5153-HDR.jpg",
         amenities: ["Twin Beds", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
         featured: false
       },
@@ -98,7 +98,7 @@ export class MemStorage implements IStorage {
         price: 50000, // ₹50,000
         stayType: "short",
         priceUnit: "month",
-        imageUrl: "/images/room5.jpg",
+        imageUrl: "/images/IMG_5162-HDR.jpg",
         amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
         featured: false
       },
@@ -108,7 +108,7 @@ export class MemStorage implements IStorage {
         price: 25000, // ₹25,000 per person
         stayType: "short",
         priceUnit: "month",
-        imageUrl: "/images/room6.jpg",
+        imageUrl: "/images/IMG_5165-HDR.jpg",
         amenities: ["Twin Beds", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
         featured: false
       }
