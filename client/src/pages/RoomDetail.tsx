@@ -71,8 +71,8 @@ const RoomDetail = () => {
                 {/* Room Image */}
                 <div className="rounded-sm overflow-hidden mb-8">
                   <img 
-                    src={`${room.imageUrl}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=90`} 
-                    alt={room.name} 
+                    src={room.imageUrl} 
+                    alt={`${room.name} at Aaram Luxury Living`} 
                     className="w-full h-[500px] object-cover"
                   />
                 </div>
@@ -158,15 +158,15 @@ const RoomDetail = () => {
                           </li>
                           <li className="flex items-center">
                             <Check className="text-[#D4AF37] mr-2" size={16} />
-                            <span>Access to fitness center</span>
+                            <span>24-hour security</span>
                           </li>
                           <li className="flex items-center">
                             <Check className="text-[#D4AF37] mr-2" size={16} />
-                            <span>On-site dining options</span>
+                            <span>Daily cleaning service</span>
                           </li>
                           <li className="flex items-center">
                             <Check className="text-[#D4AF37] mr-2" size={16} />
-                            <span>Spa & wellness facilities</span>
+                            <span>Complimentary coffee & tea</span>
                           </li>
                           <li className="flex items-center">
                             <Check className="text-[#D4AF37] mr-2" size={16} />

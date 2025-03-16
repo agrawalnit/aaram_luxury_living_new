@@ -41,8 +41,8 @@ const MotionCard = ({
     >
       <div className="aspect-ratio-box relative overflow-hidden" style={{ paddingBottom: '66.67%' }}>
         <img 
-          src={`${imageUrl}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80`} 
-          alt={name} 
+          src={imageUrl} 
+          alt={`${name} at Aaram Luxury Living`} 
           className="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
         />
       </div>

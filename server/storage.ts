@@ -58,7 +58,7 @@ export class MemStorage implements IStorage {
         price: 45000, // $450
         stayType: "short",
         priceUnit: "night",
-        imageUrl: "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+        imageUrl: "/images/room1.jpg",
         amenities: ["King Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service"],
         featured: false
       },
@@ -68,7 +68,7 @@ export class MemStorage implements IStorage {
         price: 350000, // $3,500
         stayType: "long",
         priceUnit: "month",
-        imageUrl: "https://images.unsplash.com/photo-1587985064135-0366536eab42",
+        imageUrl: "/images/room2.jpg",
         amenities: ["King Bed", "Full Kitchen", "Workspace", "Laundry", "Concierge Service"],
         featured: false
       },
@@ -78,7 +78,7 @@ export class MemStorage implements IStorage {
         price: 38000, // $380
         stayType: "short",
         priceUnit: "night",
-        imageUrl: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+        imageUrl: "/images/room3.jpg",
         amenities: ["Two Queen Beds", "Ensuite Bathroom", "Smart TV", "Coffee Machine"],
         featured: false
       },
@@ -88,7 +88,7 @@ export class MemStorage implements IStorage {
         price: 580000, // $5,800
         stayType: "long",
         priceUnit: "month",
-        imageUrl: "https://images.unsplash.com/photo-1631049035644-984fd61f446e",
+        imageUrl: "/images/room4.jpg",
         amenities: ["Multiple Bedrooms", "Private Terrace", "Jacuzzi", "Private Chef", "Panoramic Views"],
         featured: false
       },
@@ -98,7 +98,7 @@ export class MemStorage implements IStorage {
         price: 52000, // $520
         stayType: "short",
         priceUnit: "night",
-        imageUrl: "https://images.unsplash.com/photo-1603072388444-e5efcf6a70e4",
+        imageUrl: "/images/room5.jpg",
         amenities: ["King Bed", "Living Area", "Designer Furnishings", "Premium Toiletries"],
         featured: false
       },
@@ -108,7 +108,7 @@ export class MemStorage implements IStorage {
         price: 280000, // $2,800
         stayType: "long",
         priceUnit: "month",
-        imageUrl: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461",
+        imageUrl: "/images/room6.jpg",
         amenities: ["Queen Bed", "Kitchenette", "Designer Bathroom", "Workspace"],
         featured: false
       },
@@ -118,7 +118,7 @@ export class MemStorage implements IStorage {
         price: 95000, // $950
         stayType: "short",
         priceUnit: "night",
-        imageUrl: "https://images.unsplash.com/photo-1540518614846-7eded433c457",
+        imageUrl: "/images/featured-room.jpg",
         amenities: ["King Size Beds", "Marble Bathroom", "Living Area", "Kitchenette", "Panoramic Views", "Private Butler"],
         featured: true
       }

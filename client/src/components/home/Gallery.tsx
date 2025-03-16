@@ -10,27 +10,27 @@ import {
 // Gallery images
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1551632811-561732d1e306",
+    src: "/images/gallery1.jpg",
     alt: "Aaram Luxury Living elegant lobby"
   },
   {
-    src: "https://images.unsplash.com/photo-1590073242678-70ee3fc28f17",
+    src: "/images/gallery2.jpg",
     alt: "Aaram Luxury Living dining area"
   },
   {
-    src: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7",
+    src: "/images/gallery3.jpg",
     alt: "Aaram Luxury Living swimming pool"
   },
   {
-    src: "https://images.unsplash.com/photo-1592229505726-ca121723b8ef",
-    alt: "Aaram Luxury Living spa facility"
+    src: "/images/gallery4.jpg",
+    alt: "Aaram Luxury Living lounge area"
   },
   {
-    src: "https://images.unsplash.com/photo-1544097935-e6b9524b0a22",
-    alt: "Aaram Luxury Living fitness center"
+    src: "/images/gallery5.jpg",
+    alt: "Aaram Luxury Living outdoor terrace"
   },
   {
-    src: "https://images.unsplash.com/photo-1620332372374-f108c53d2e03",
+    src: "/images/gallery6.jpg",
     alt: "Aaram Luxury Living bar and lounge"
   }
 ];
@@ -90,7 +90,7 @@ const Gallery = () => {
                   onClick={() => setSelectedImage(image)}
                 >
                   <img 
-                    src={`${image.src}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80`} 
+                    src={image.src} 
                     alt={image.alt} 
                     className="w-full h-80 object-cover hover:scale-105 transition-all duration-500"
                   />
@@ -99,7 +99,7 @@ const Gallery = () => {
               <DialogContent className="sm:max-w-3xl border-[#1E1E1E] bg-[#0A0A0A]/95 backdrop-blur-sm">
                 <div className="p-1">
                   <img 
-                    src={`${image.src}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=90`} 
+                    src={image.src} 
                     alt={image.alt} 
                     className="w-full h-auto max-h-[80vh] object-contain"
                   />
