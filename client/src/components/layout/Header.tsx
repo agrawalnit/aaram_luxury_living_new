@@ -36,10 +36,11 @@ const Header = () => {
         <div className="flex justify-between items-center py-4 border-b border-[#1E1E1E]">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
+              <img src="/images/logo.jpeg" alt="Aaram Luxury Living" className="h-12 w-auto mr-3" />
               <span className="text-2xl font-playfair font-bold tracking-wide text-[#D4AF37]">Aaram Luxury Living</span>
             </Link>
           </div>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 items-center">
             {navLinks.map((link) => (
@@ -70,7 +71,7 @@ const Header = () => {
               Book Now
             </Button>
           </nav>
-          
+
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
             <Button 
@@ -84,7 +85,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Mobile Navigation */}
       <AnimatePresence>
         {mobileMenuOpen && (
