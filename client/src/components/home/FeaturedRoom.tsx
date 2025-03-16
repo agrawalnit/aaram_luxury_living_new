@@ -44,11 +44,11 @@ const FeaturedRoom = () => {
     return null;
   }
 
-  const formattedPrice = new Intl.NumberFormat('en-US', {
+  const formattedPrice = new Intl.NumberFormat('en-IN', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'INR',
     minimumFractionDigits: 0,
-  }).format(featuredRoom.price / 100);
+  }).format(featuredRoom.price);
 
   const displayPrice = featuredRoom.priceUnit === 'night' 
     ? `${formattedPrice}/night`
@@ -72,7 +72,7 @@ const FeaturedRoom = () => {
             </p>
             
             <div className="grid grid-cols-2 gap-6 mb-8">
-              {featuredRoom.amenities.slice(0, 4).map((amenity, index) => {
+              {(featuredRoom.amenities as string[]).slice(0, 4).map((amenity: string, index: number) => {
                 const Icon = index === 0 ? Bed : 
                              index === 1 ? Bath : 
                              index === 2 ? Sofa : 
@@ -109,7 +109,7 @@ const FeaturedRoom = () => {
           >
             <div className="relative z-10 overflow-hidden rounded-sm">
               <img 
-                src={`${featuredRoom.imageUrl}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`} 
+                src={featuredRoom.imageUrl} 
                 alt={featuredRoom.name} 
                 className="w-full h-auto object-cover"
               />

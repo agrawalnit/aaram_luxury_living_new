@@ -53,74 +53,64 @@ export class MemStorage implements IStorage {
   private initializeRooms() {
     const roomData: InsertRoom[] = [
       {
-        name: "Deluxe King Suite",
-        description: "A spacious suite with a king-sized bed, luxurious bathroom, and stunning city views.",
-        price: 45000, // $450
-        stayType: "short",
-        priceUnit: "night",
-        imageUrl: "/images/room1.jpg",
-        amenities: ["King Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service"],
-        featured: false
-      },
-      {
-        name: "Executive Apartment",
-        description: "Sophisticated apartment with a separate bedroom, full kitchen, and workspace.",
-        price: 350000, // $3,500
+        name: "Luxury Room with Kitchen",
+        description: "Elegant living space with a fully equipped kitchen, perfect for extended stays. Features premium amenities and stunning views of Gurugram's Golf Course Road.",
+        price: 55000, // ₹55,000
         stayType: "long",
         priceUnit: "month",
+        imageUrl: "/images/room1.jpg",
+        amenities: ["King Size Bed", "Full Kitchen", "Living Area", "High-Speed WiFi", "24/7 Concierge", "Room Service"],
+        featured: true
+      },
+      {
+        name: "Premium Room",
+        description: "Luxurious accommodation without kitchen, perfect for short stays. Experience unparalleled comfort with premium amenities and elegant decor.",
+        price: 4000, // ₹4,000
+        stayType: "short",
+        priceUnit: "night",
         imageUrl: "/images/room2.jpg",
-        amenities: ["King Bed", "Full Kitchen", "Workspace", "Laundry", "Concierge Service"],
+        amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
         featured: false
       },
       {
-        name: "Premium Double Room",
-        description: "Elegant room with two queen beds, perfect for families or groups.",
-        price: 38000, // $380
+        name: "Premium Room",
+        description: "Luxurious accommodation without kitchen, perfect for short stays. Experience unparalleled comfort with premium amenities and elegant decor.",
+        price: 4000, // ₹4,000
         stayType: "short",
         priceUnit: "night",
         imageUrl: "/images/room3.jpg",
-        amenities: ["Two Queen Beds", "Ensuite Bathroom", "Smart TV", "Coffee Machine"],
+        amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
         featured: false
       },
       {
-        name: "Luxury Penthouse",
-        description: "Our most exclusive offering with panoramic views, multiple bedrooms, and private terrace.",
-        price: 580000, // $5,800
-        stayType: "long",
-        priceUnit: "month",
+        name: "Premium Room",
+        description: "Luxurious accommodation without kitchen, perfect for short stays. Experience unparalleled comfort with premium amenities and elegant decor.",
+        price: 4000, // ₹4,000
+        stayType: "short",
+        priceUnit: "night",
         imageUrl: "/images/room4.jpg",
-        amenities: ["Multiple Bedrooms", "Private Terrace", "Jacuzzi", "Private Chef", "Panoramic Views"],
+        amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
         featured: false
       },
       {
-        name: "Signature Suite",
-        description: "Spacious suite with separate living area and designer furnishings.",
-        price: 52000, // $520
+        name: "Premium Room",
+        description: "Luxurious accommodation without kitchen, perfect for short stays. Experience unparalleled comfort with premium amenities and elegant decor.",
+        price: 4000, // ₹4,000
         stayType: "short",
         priceUnit: "night",
         imageUrl: "/images/room5.jpg",
-        amenities: ["King Bed", "Living Area", "Designer Furnishings", "Premium Toiletries"],
+        amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
         featured: false
       },
       {
-        name: "Luxury Studio",
-        description: "Contemporary studio apartment with high-end finishes and efficient layout.",
-        price: 280000, // $2,800
-        stayType: "long",
-        priceUnit: "month",
-        imageUrl: "/images/room6.jpg",
-        amenities: ["Queen Bed", "Kitchenette", "Designer Bathroom", "Workspace"],
-        featured: false
-      },
-      {
-        name: "Royal Penthouse Suite",
-        description: "Our crown jewel, the Royal Penthouse Suite, offers an unparalleled luxury experience with panoramic views, exclusive amenities, and exceptional design. Perfect for both short stays and extended residences.",
-        price: 95000, // $950
+        name: "Premium Room",
+        description: "Luxurious accommodation without kitchen, perfect for short stays. Experience unparalleled comfort with premium amenities and elegant decor.",
+        price: 4000, // ₹4,000
         stayType: "short",
         priceUnit: "night",
-        imageUrl: "/images/featured-room.jpg",
-        amenities: ["King Size Beds", "Marble Bathroom", "Living Area", "Kitchenette", "Panoramic Views", "Private Butler"],
-        featured: true
+        imageUrl: "/images/room6.jpg",
+        amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
+        featured: false
       }
     ];
 
@@ -165,7 +155,8 @@ export class MemStorage implements IStorage {
 
   async createRoom(insertRoom: InsertRoom): Promise<Room> {
     const id = this.roomCurrentId++;
-    const room: Room = { ...insertRoom, id };
+    const featured = insertRoom.featured !== undefined ? insertRoom.featured : false;
+    const room: Room = { ...insertRoom, id, featured };
     this.rooms.set(id, room);
     return room;
   }

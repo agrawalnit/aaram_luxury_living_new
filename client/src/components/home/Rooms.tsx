@@ -76,13 +76,13 @@ const Rooms = () => {
               onClick={() => setFilter('short')} 
               className={filterClasses('short')}
             >
-              Short Stays
+              Without Kitchen
             </button>
             <button 
               onClick={() => setFilter('long')} 
               className={filterClasses('long')}
             >
-              Long Term
+              With Kitchen
             </button>
           </div>
         </motion.div>
