@@ -82,7 +82,7 @@ const RoomDetail = () => {
                   <div className="flex justify-between items-start mb-4">
                     <div>
                       <span className="text-[#D4AF37] uppercase tracking-widest text-sm font-medium">
-                        {room.stayType === 'short' ? 'Short Stay' : 'Long Term'}
+                        Luxury Accommodation
                       </span>
                       <h1 className="font-playfair font-bold text-3xl md:text-4xl mt-2">{room.name}</h1>
                     </div>
@@ -251,7 +251,7 @@ const RoomDetail = () => {
                       {displayPrice}
                     </span>
                     <span className="text-[#CCCCCC]">
-                      {room.stayType === 'short' ? 'Minimum stay: 1 night' : 'Minimum stay: 1 month'}
+                      {room.priceUnit === 'night' ? 'Minimum stay: 1 night' : 'Minimum stay: 1 month'}
                     </span>
                   </div>
                   

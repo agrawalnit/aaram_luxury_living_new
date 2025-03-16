@@ -12,15 +12,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Get all rooms
   apiRouter.get("/rooms", async (req, res) => {
     try {
-      const stayType = req.query.stayType as string | undefined;
-      
-      let rooms;
-      if (stayType && (stayType === "short" || stayType === "long")) {
-        rooms = await storage.getRoomsByStayType(stayType);
-      } else {
-        rooms = await storage.getAllRooms();
-      }
-      
+      // No longer filtering by stay type
+      const rooms = await storage.getAllRooms();
       res.json(rooms);
     } catch (error) {
       console.error("Error fetching rooms:", error);
