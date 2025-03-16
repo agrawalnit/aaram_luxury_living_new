@@ -82,7 +82,7 @@ const Contact = () => {
                 <MapPin className="text-[#D4AF37] w-8" />
                 <div className="ml-4">
                   <h3 className="text-[#F5F5F5] font-medium">Location</h3>
-                  <p className="text-[#CCCCCC]">Sector 42, Gurugram, Haryana 122001</p>
+                  <p className="text-[#CCCCCC]">Plot 803, Sector 42, Gurugram, Haryana 122001</p>
                 </div>
               </div>
 
