@@ -12,7 +12,7 @@ const BookingCTA = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/90 to-[#0A0A0A]/90"></div>
       </div>
-      
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -58,6 +58,13 @@ const BookingCTA = () => {
                 className="w-full px-8 py-4 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] font-medium text-base uppercase tracking-wider transition-all"
               >
                 Call to Book
+              </Button>
+            </a>
+            <a href="/rooms/1#contact"> {/* Added Book Now button */}
+              <Button
+                className="w-full sm:w-auto px-8 py-4 bg-[#D4AF37] text-[#0A0A0A] font-medium text-base uppercase tracking-wider hover:bg-[#B69121] transition-all"
+              >
+                Book Now
               </Button>
             </a>
           </div>
