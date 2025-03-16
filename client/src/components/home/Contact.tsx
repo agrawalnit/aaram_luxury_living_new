@@ -103,21 +103,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-[#2A2A2A] flex items-center justify-center text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all">
-                <Facebook size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#2A2A2A] flex items-center justify-center text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all">
-                <Instagram size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#2A2A2A] flex items-center justify-center text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all">
-                <Twitter size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#2A2A2A] flex items-center justify-center text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all">
-                <Linkedin size={18} />
-              </a>
-            </div>
-          </motion.div>
+            </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 20 }}
