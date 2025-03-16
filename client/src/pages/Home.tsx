@@ -6,6 +6,7 @@ import Amenities from "@/components/home/Amenities";
 import Gallery from "@/components/home/Gallery";
 import BookingCTA from "@/components/home/BookingCTA";
 import Contact from "@/components/home/Contact";
+import MissionVision from "@/components/home/MissionVision";
 import { Helmet } from 'react-helmet';
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <main>
         <Hero />
         <About />
+        <MissionVision />
         <Rooms />
         <FeaturedRoom />
         <Amenities />

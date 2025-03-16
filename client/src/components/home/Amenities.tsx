@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Headphones, Utensils, Droplets, Dumbbell, Shield, Car } from "lucide-react";
+import { Headphones, Shield, Car } from "lucide-react";
 
 const amenities = [
   {
@@ -7,24 +7,6 @@ const amenities = [
     title: "24/7 Concierge",
     description:
       "Our dedicated staff is available around the clock to assist with any request, from restaurant reservations to travel arrangements.",
-  },
-  {
-    icon: Utensils,
-    title: "Fine Dining",
-    description:
-      "Indulge in exceptional cuisine at our in-house restaurant, featuring seasonal menus crafted by our award-winning chef.",
-  },
-  {
-    icon: Droplets,
-    title: "Spa & Wellness",
-    description:
-      "Restore balance with our comprehensive spa services, including massage therapy, facials, and rejuvenating treatments.",
-  },
-  {
-    icon: Dumbbell,
-    title: "Fitness Center",
-    description:
-      "Stay active in our state-of-the-art fitness facility featuring premium equipment and personal training options.",
   },
   {
     icon: Shield,
