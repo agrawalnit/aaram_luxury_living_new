@@ -97,12 +97,12 @@ const FeaturedRoom = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={`/rooms/${featuredRoom.id}`}>
-                <Button className="px-6 py-3 bg-[#D4AF37] text-[#0A0A0A] font-medium text-sm uppercase tracking-wider hover:bg-[#E5C158] transition-all">
+                <Button className="px-6 py-3 bg-[#F5F5DC] text-[#0A0A0A] font-medium text-sm uppercase tracking-wider hover:bg-[#F5F5DC] transition-all">
                   View Room Details
                 </Button>
               </a>
               <a href={`/rooms/${featuredRoom.id}`}>
-                <Button variant="outline" className="px-6 py-3 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all text-sm uppercase tracking-wider">
+                <Button variant="outline" className="px-6 py-3 border border-[#F5F5DC] text-[#F5F5DC] hover:bg-[#F5F5DC] hover:text-[#0A0A0A] transition-all text-sm uppercase tracking-wider">
                   Take a Virtual Tour
                 </Button>
               </a>

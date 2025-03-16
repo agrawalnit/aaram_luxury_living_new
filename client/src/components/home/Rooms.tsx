@@ -41,7 +41,7 @@ const Rooms = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-[#D4AF37] uppercase tracking-widest text-sm font-medium">Our Accommodations</span>
+          <span className="text-[#F5F5DC] uppercase tracking-widest text-sm font-medium">Our Accommodations</span>
           <h2 className="font-playfair font-bold text-3xl md:text-4xl mt-2 mb-4">Exceptional Living Spaces</h2>
           <p className="text-[#CCCCCC] max-w-2xl mx-auto">
             Discover our collection of 22 impeccably designed rooms, each offering a unique blend of comfort and sophistication.

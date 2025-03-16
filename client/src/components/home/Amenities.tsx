@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Headphones, Shield, Car } from "lucide-react";
+import { Headphones, Shield, Coffee } from "lucide-react";
 
 const amenities = [
   {
@@ -15,7 +15,7 @@ const amenities = [
       "Enjoy peace of mind with our comprehensive security system and 24-hour monitoring by professional staff.",
   },
   {
-    icon: Car,
+    icon: Coffee,
     title: "Coffee Shop/Patisserie",
     description:
       "Indulge in fresh coffee and delectable pastries at our in-house café.",

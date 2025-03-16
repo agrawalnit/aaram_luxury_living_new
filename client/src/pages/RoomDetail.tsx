@@ -14,14 +14,14 @@ import { Helmet } from 'react-helmet';
 const RoomDetail = () => {
   const [, params] = useRoute("/rooms/:id");
   const roomId = params?.id ? parseInt(params.id) : 0;
-  
+
   // We don't need these states anymore, but keeping the reference in case
   const [date, setDate] = useState<Date | undefined>(undefined);
   const [guests, setGuests] = useState<number>(1);
-  
+
   // Image carousel state
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
+
   // Collection of room images (all property images available)
   const propertyImages = [
     '/images/IMG_5116-HDR.jpg',
@@ -37,55 +37,55 @@ const RoomDetail = () => {
     '/images/IMG_5165-HDR.jpg',
     '/images/IMG_5177-HDR.jpg'
   ];
-  
+
   const { data: room, isLoading } = useQuery<Room>({
     queryKey: [`/api/rooms/${roomId}`],
   });
-  
+
   if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <Loader2 className="h-8 w-8 text-[#D4AF37] animate-spin" />
+        <Loader2 className="h-8 w-8 text-[#F5F5DC] animate-spin" />
       </div>
     );
   }
-  
+
   if (!room) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Room not found</h1>
           <p className="text-[#CCCCCC] mb-8">The room you're looking for doesn't exist or has been removed.</p>
-          <a href="/#rooms" className="text-[#D4AF37] hover:underline">Back to rooms</a>
+          <a href="/#rooms" className="text-[#F5F5DC] hover:underline">Back to rooms</a>
         </div>
       </div>
     );
   }
-  
+
   // Navigation functions for the image carousel
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % propertyImages.length);
   };
-  
+
   const prevImage = () => {
     setCurrentImageIndex((prevIndex) => 
       prevIndex === 0 ? propertyImages.length - 1 : prevIndex - 1
     );
   };
-  
+
   // Use standard prices based on room type
   const price = room.name.toLowerCase().includes('twin') || room.name.toLowerCase().includes('shared') 
     ? 25000 
     : 50000;
-    
+
   const formattedPrice = new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency: 'INR',
     maximumFractionDigits: 0,
   }).format(price);
-  
+
   const displayPrice = `${formattedPrice} / ${room.priceUnit}`;
-    
+
   return (
     <div>
       <Helmet>
@@ -112,7 +112,7 @@ const RoomDetail = () => {
                         alt={`${room.name} at Aaram Luxury Living`} 
                         className="w-full h-[500px] object-cover transition-opacity duration-500"
                       />
-                      
+
                       {/* Navigation Buttons */}
                       <div className="absolute inset-0 flex items-center justify-between px-4">
                         <button 
@@ -128,7 +128,7 @@ const RoomDetail = () => {
                           <ChevronRight size={24} />
                         </button>
                       </div>
-                      
+
                       {/* Image Counter */}
                       <div className="absolute bottom-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
                         {currentImageIndex + 1} / {propertyImages.length}
@@ -136,24 +136,24 @@ const RoomDetail = () => {
                     </>
                   )}
                 </div>
-                
+
                 {/* Room Info */}
                 <div className="mb-8">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <span className="text-[#D4AF37] uppercase tracking-widest text-sm font-medium">
+                      <span className="text-[#F5F5DC] uppercase tracking-widest text-sm font-medium">
                         Luxury Accommodation
                       </span>
                       <h1 className="font-playfair font-bold text-3xl md:text-4xl mt-2">{room.name}</h1>
                     </div>
                     <div className="text-right">
-                      <span className="block text-[#D4AF37] text-2xl font-playfair font-bold">{formattedPrice}</span>
+                      <span className="block text-[#F5F5DC] text-2xl font-playfair font-bold">{formattedPrice}</span>
                       <span className="text-[#CCCCCC] text-sm">per {room.priceUnit}</span>
                     </div>
                   </div>
-                  
+
                   <p className="text-[#CCCCCC] mb-6">{room.description}</p>
-                  
+
                   {/* Room Features */}
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
                     {Array.isArray(room.amenities) && room.amenities.map((amenity: string, index: number) => {
@@ -164,47 +164,47 @@ const RoomDetail = () => {
                       else if (amenity.toLowerCase().includes('wifi')) Icon = Wifi;
                       else if (amenity.toLowerCase().includes('tv')) Icon = Tv;
                       else if (amenity.toLowerCase().includes('coffee')) Icon = Coffee;
-                      
+
                       return (
                         <div key={index} className="flex items-center">
-                          <Icon className="text-[#D4AF37] mr-3" size={18} />
+                          <Icon className="text-[#F5F5DC] mr-3" size={18} />
                           <span className="text-[#F5F5F5]">{amenity}</span>
                         </div>
                       );
                     })}
                   </div>
-                  
+
                   <Separator className="bg-[#2A2A2A] my-8" />
-                  
+
                   {/* Room Details */}
                   <div>
                     <h2 className="font-playfair font-bold text-2xl mb-4">Room Details</h2>
                     <p className="text-[#CCCCCC] mb-6">
                       Our {room.name} provides the perfect blend of comfort and luxury. Designed with meticulous attention to detail, this room offers an exceptional living experience with premium amenities and furnishings.
                     </p>
-                    
+
                     <div className="grid md:grid-cols-2 gap-8">
                       <div>
                         <h3 className="font-medium text-xl mb-3">Room Amenities</h3>
                         <ul className="text-[#CCCCCC] space-y-2">
                           <li className="flex items-center">
-                            <Check className="text-[#D4AF37] mr-2" size={16} />
+                            <Check className="text-[#F5F5DC] mr-2" size={16} />
                             <span>Daily housekeeping</span>
                           </li>
                           <li className="flex items-center">
-                            <Check className="text-[#D4AF37] mr-2" size={16} />
+                            <Check className="text-[#F5F5DC] mr-2" size={16} />
                             <span>Premium bedding</span>
                           </li>
                           <li className="flex items-center">
-                            <Check className="text-[#D4AF37] mr-2" size={16} />
+                            <Check className="text-[#F5F5DC] mr-2" size={16} />
                             <span>High-speed Wi-Fi</span>
                           </li>
                           <li className="flex items-center">
-                            <Check className="text-[#D4AF37] mr-2" size={16} />
+                            <Check className="text-[#F5F5DC] mr-2" size={16} />
                             <span>Smart TV with streaming</span>
                           </li>
                           <li className="flex items-center">
-                            <Check className="text-[#D4AF37] mr-2" size={16} />
+                            <Check className="text-[#F5F5DC] mr-2" size={16} />
                             <span>Luxury toiletries</span>
                           </li>
                         </ul>
@@ -213,23 +213,23 @@ const RoomDetail = () => {
                         <h3 className="font-medium text-xl mb-3">Property Access</h3>
                         <ul className="text-[#CCCCCC] space-y-2">
                           <li className="flex items-center">
-                            <Check className="text-[#D4AF37] mr-2" size={16} />
+                            <Check className="text-[#F5F5DC] mr-2" size={16} />
                             <span>24/7 concierge service</span>
                           </li>
                           <li className="flex items-center">
-                            <Check className="text-[#D4AF37] mr-2" size={16} />
+                            <Check className="text-[#F5F5DC] mr-2" size={16} />
                             <span>24-hour security</span>
                           </li>
                           <li className="flex items-center">
-                            <Check className="text-[#D4AF37] mr-2" size={16} />
+                            <Check className="text-[#F5F5DC] mr-2" size={16} />
                             <span>Daily cleaning service</span>
                           </li>
                           <li className="flex items-center">
-                            <Check className="text-[#D4AF37] mr-2" size={16} />
+                            <Check className="text-[#F5F5DC] mr-2" size={16} />
                             <span>Complimentary coffee & tea</span>
                           </li>
                           <li className="flex items-center">
-                            <Check className="text-[#D4AF37] mr-2" size={16} />
+                            <Check className="text-[#F5F5DC] mr-2" size={16} />
                             <span>Secure parking</span>
                           </li>
                         </ul>
@@ -239,7 +239,7 @@ const RoomDetail = () => {
                 </div>
               </motion.div>
             </div>
-            
+
             {/* Booking Sidebar - 1/3 width */}
             <div className="lg:col-span-1">
               <motion.div
@@ -252,7 +252,7 @@ const RoomDetail = () => {
                 <p className="text-[#CCCCCC] mb-6">
                   To inquire about this room or make a reservation, please contact us directly using the information below.
                 </p>
-                
+
                 <div className="space-y-6">                  
                   {/* Price Display */}
                   <div className="flex justify-between items-center py-4 border-t border-b border-[#2A2A2A]">
@@ -263,32 +263,32 @@ const RoomDetail = () => {
                       {room.priceUnit === 'night' ? 'Minimum stay: 1 night' : 'Minimum stay: 1 month'}
                     </span>
                   </div>
-                  
+
                   {/* Contact Info */}
                   <div className="space-y-4">
                     <div className="flex items-center">
-                      <Phone className="text-[#D4AF37] mr-3" size={18} />
-                      <a href="tel:+919284388074" className="text-[#F5F5F5] hover:text-[#D4AF37] transition-colors">+91 92843 88074</a>
+                      <Phone className="text-[#F5F5DC] mr-3" size={18} />
+                      <a href="tel:+919284388074" className="text-[#F5F5F5] hover:text-[#F5F5DC] transition-colors">+91 92843 88074</a>
                     </div>
                     <div className="flex items-center">
-                      <Mail className="text-[#D4AF37] mr-3" size={18} />
-                      <a href="mailto:parth.babbar@aaramluxury.com" className="text-[#F5F5F5] hover:text-[#D4AF37] transition-colors">parth.babbar@aaramluxury.com</a>
+                      <Mail className="text-[#F5F5DC] mr-3" size={18} />
+                      <a href="mailto:parth.babbar@aaramluxury.com" className="text-[#F5F5F5] hover:text-[#F5F5DC] transition-colors">parth.babbar@aaramluxury.com</a>
                     </div>
                   </div>
-                  
+
                   <div className="bg-[#0A0A0A]/30 p-4 rounded-sm">
                     <p className="text-center text-[#CCCCCC]">Our concierge is available 24/7 to assist with your booking and any inquiries.</p>
                   </div>
-                  
+
                   {/* Contact Buttons */}
                   <div className="grid grid-cols-2 gap-4">
                     <a href="tel:+919284388074" className="w-full">
-                      <Button className="w-full text-center py-6 bg-[#D4AF37] text-[#0A0A0A] hover:bg-[#E5C158] transition-all">
+                      <Button className="w-full text-center py-6 bg-[#F5F5DC] text-[#0A0A0A] hover:bg-[#E5C158] transition-all">
                         <span className="uppercase font-medium tracking-wider">Call Us</span>
                       </Button>
                     </a>
                     <a href="mailto:parth.babbar@aaramluxury.com" className="w-full">
-                      <Button variant="outline" className="w-full text-center py-6 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all">
+                      <Button variant="outline" className="w-full text-center py-6 border border-[#F5F5DC] text-[#F5F5DC] hover:bg-[#F5F5DC] hover:text-[#0A0A0A] transition-all">
                         <span className="uppercase font-medium tracking-wider">Email Us</span>
                       </Button>
                     </a>
