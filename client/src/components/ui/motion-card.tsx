@@ -21,17 +21,15 @@ const MotionCard = ({
   imageUrl, 
   className 
 }: MotionCardProps) => {
-  const formattedPrice = new Intl.NumberFormat('en-US', {
+  const formattedPrice = new Intl.NumberFormat('en-IN', {
     style: 'currency',
-    currency: 'USD',
-    minimumFractionDigits: 0,
-  }).format(price / 100);
+    currency: 'INR',
+    maximumFractionDigits: 0,
+  }).format(price);
 
-  const displayPrice = priceUnit === 'night' 
-    ? `From ${formattedPrice}/night`
-    : `From ${formattedPrice}/month`;
+  const displayPrice = `${formattedPrice}/month`;
 
-  const displayStayType = stayType === 'short' ? 'Short Stay' : 'Long Term';
+  const displayStayType = stayType === 'short' ? 'Without Kitchen' : 'With Kitchen';
 
   return (
     <motion.div

@@ -47,12 +47,10 @@ const FeaturedRoom = () => {
   const formattedPrice = new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency: 'INR',
-    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
   }).format(featuredRoom.price);
 
-  const displayPrice = featuredRoom.priceUnit === 'night' 
-    ? `${formattedPrice}/night`
-    : `${formattedPrice}/month`;
+  const displayPrice = `${formattedPrice}/month`;
 
   return (
     <section className="py-20 md:py-28 bg-[#1E1E1E] relative overflow-hidden">
@@ -64,7 +62,9 @@ const FeaturedRoom = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <span className="text-[#D4AF37] uppercase tracking-widest text-sm font-medium">Featured Space</span>
+            <span className="text-[#D4AF37] uppercase tracking-widest text-sm font-medium">
+              {featuredRoom.stayType === 'long' ? 'Featured Room With Kitchen' : 'Featured Room Without Kitchen'}
+            </span>
             <h2 className="font-playfair font-bold text-3xl md:text-4xl mt-2 mb-6">{featuredRoom.name}</h2>
             
             <p className="text-[#CCCCCC] mb-6">

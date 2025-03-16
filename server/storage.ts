@@ -53,9 +53,9 @@ export class MemStorage implements IStorage {
   private initializeRooms() {
     const roomData: InsertRoom[] = [
       {
-        name: "Luxury Room with Kitchen",
-        description: "Elegant living space with a fully equipped kitchen, perfect for extended stays. Features premium amenities and stunning views of Gurugram's Golf Course Road.",
-        price: 55000, // ₹55,000
+        name: "Luxury Room with Kitchen (Solo)",
+        description: "Elegant living space with a fully equipped kitchen, perfect for solo occupancy. Features premium amenities and stunning views of Gurugram's Golf Course Road.",
+        price: 50000, // ₹50,000
         stayType: "long",
         priceUnit: "month",
         imageUrl: "/images/room1.jpg",
@@ -63,53 +63,53 @@ export class MemStorage implements IStorage {
         featured: true
       },
       {
-        name: "Premium Room",
-        description: "Luxurious accommodation without kitchen, perfect for short stays. Experience unparalleled comfort with premium amenities and elegant decor.",
-        price: 4000, // ₹4,000
-        stayType: "short",
-        priceUnit: "night",
+        name: "Luxury Room with Kitchen (Twin Sharing)",
+        description: "Elegant living space with a fully equipped kitchen, perfect for twin sharing. Features premium amenities and stunning views of Gurugram's Golf Course Road.",
+        price: 25000, // ₹25,000 per person
+        stayType: "long",
+        priceUnit: "month",
         imageUrl: "/images/room2.jpg",
-        amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
+        amenities: ["Twin Beds", "Full Kitchen", "Living Area", "High-Speed WiFi", "24/7 Concierge", "Room Service"],
         featured: false
       },
       {
-        name: "Premium Room",
-        description: "Luxurious accommodation without kitchen, perfect for short stays. Experience unparalleled comfort with premium amenities and elegant decor.",
-        price: 4000, // ₹4,000
+        name: "Premium Room (Solo)",
+        description: "Luxurious accommodation without kitchen, perfect for solo occupancy. Experience unparalleled comfort with premium amenities and elegant decor.",
+        price: 50000, // ₹50,000
         stayType: "short",
-        priceUnit: "night",
+        priceUnit: "month",
         imageUrl: "/images/room3.jpg",
         amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
         featured: false
       },
       {
-        name: "Premium Room",
-        description: "Luxurious accommodation without kitchen, perfect for short stays. Experience unparalleled comfort with premium amenities and elegant decor.",
-        price: 4000, // ₹4,000
+        name: "Premium Room (Twin Sharing)",
+        description: "Luxurious accommodation without kitchen, perfect for twin sharing. Experience unparalleled comfort with premium amenities and elegant decor.",
+        price: 25000, // ₹25,000 per person
         stayType: "short",
-        priceUnit: "night",
+        priceUnit: "month",
         imageUrl: "/images/room4.jpg",
-        amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
+        amenities: ["Twin Beds", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
         featured: false
       },
       {
-        name: "Premium Room",
-        description: "Luxurious accommodation without kitchen, perfect for short stays. Experience unparalleled comfort with premium amenities and elegant decor.",
-        price: 4000, // ₹4,000
+        name: "Premium Room (Solo)",
+        description: "Luxurious accommodation without kitchen, perfect for solo occupancy. Experience unparalleled comfort with premium amenities and elegant decor.",
+        price: 50000, // ₹50,000
         stayType: "short",
-        priceUnit: "night",
+        priceUnit: "month",
         imageUrl: "/images/room5.jpg",
         amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
         featured: false
       },
       {
-        name: "Premium Room",
-        description: "Luxurious accommodation without kitchen, perfect for short stays. Experience unparalleled comfort with premium amenities and elegant decor.",
-        price: 4000, // ₹4,000
+        name: "Premium Room (Twin Sharing)",
+        description: "Luxurious accommodation without kitchen, perfect for twin sharing. Experience unparalleled comfort with premium amenities and elegant decor.",
+        price: 25000, // ₹25,000 per person
         stayType: "short",
-        priceUnit: "night",
+        priceUnit: "month",
         imageUrl: "/images/room6.jpg",
-        amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
+        amenities: ["Twin Beds", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
         featured: false
       }
     ];
