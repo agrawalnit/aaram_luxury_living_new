@@ -11,51 +11,51 @@ import {
 const galleryImages = [
   {
     src: "/images/IMG_5116-HDR.jpg",
-    alt: "Aaram Luxury Living elegant living space"
+    alt: "Luxury Living Space"
   },
   {
     src: "/images/IMG_5120-HDR.jpg",
-    alt: "Aaram Luxury Living luxurious bathroom"
+    alt: "Luxury Living Space"
   },
   {
     src: "/images/IMG_5123-HDR.jpg",
-    alt: "Aaram Luxury Living sophisticated workspace"
+    alt: "Luxury Living Space"
   },
   {
     src: "/images/IMG_5135-HDR.jpg",
-    alt: "Aaram Luxury Living panoramic views"
+    alt: "Luxury Living Space"
   },
   {
     src: "/images/IMG_5138-HDR.jpg",
-    alt: "Aaram Luxury Living modern kitchen area"
+    alt: "Luxury Living Space"
   },
   {
     src: "/images/IMG_5144-HDR.jpg",
-    alt: "Aaram Luxury Living spacious bedroom"
+    alt: "Luxury Living Space"
   },
   {
     src: "/images/IMG_5150-HDR.jpg",
-    alt: "Aaram Luxury Living stylish interior design"
+    alt: "Luxury Living Space"
   },
   {
     src: "/images/IMG_5153-HDR.jpg",
-    alt: "Aaram Luxury Living dining experience"
+    alt: "Luxury Living Space"
   },
   {
     src: "/images/IMG_5159-HDR.jpg",
-    alt: "Aaram Luxury Living premium furniture"
+    alt: "Luxury Living Space"
   },
   {
     src: "/images/IMG_5162-HDR.jpg",
-    alt: "Aaram Luxury Living entertainment space"
+    alt: "Luxury Living Space"
   },
   {
     src: "/images/IMG_5165-HDR.jpg",
-    alt: "Aaram Luxury Living relaxation corner"
+    alt: "Luxury Living Space"
   },
   {
     src: "/images/IMG_5177-HDR.jpg",
-    alt: "Aaram Luxury Living luxury accommodation"
+    alt: "Luxury Living Space"
   }
 ];
 

@@ -16,9 +16,9 @@ const amenities = [
   },
   {
     icon: Car,
-    title: "Valet Parking",
+    title: "Coffee Shop/Patisserie",
     description:
-      "Experience the convenience of our premium valet service, with secure parking facilities for all residents and guests.",
+      "Indulge in fresh coffee and delectable pastries at our in-house café.",
   },
 ];
 
@@ -58,7 +58,7 @@ const Amenities = () => {
             Experience a wealth of premium services and facilities designed to enhance your stay.
           </p>
         </motion.div>
-        
+
         <motion.div
           variants={containerVariants}
           initial="hidden"

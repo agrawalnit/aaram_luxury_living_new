@@ -32,7 +32,7 @@ const About = () => {
               </div>
               <div className="h-12 w-px bg-[#D4AF37]/30"></div>
               <div>
-                <span className="block text-[#D4AF37] text-3xl font-playfair font-bold">5★</span>
+                <span className="block text-[#D4AF37] text-3xl font-playfair font-bold">4★</span>
                 <span className="text-sm text-[#CCCCCC] uppercase tracking-wide">Service</span>
               </div>
             </div>
