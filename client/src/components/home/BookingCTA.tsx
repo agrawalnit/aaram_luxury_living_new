@@ -45,19 +45,19 @@ const BookingCTA = () => {
             <p className="text-[#D4AF37] font-medium text-xl">+91 98765 43210</p>
           </div>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:+919876543210" className="w-full sm:w-auto">
+            <a href="#rooms" className="w-full sm:w-auto">
               <Button 
                 className="w-full px-8 py-4 bg-[#D4AF37] text-[#0A0A0A] font-medium text-base uppercase tracking-wider hover:bg-[#E5C158] transition-all"
               >
-                Call to Book Now
+                View Our Rooms
               </Button>
             </a>
-            <a href="mailto:info@aaramluxuryliving.com" className="w-full sm:w-auto">
+            <a href="tel:+919876543210" className="w-full sm:w-auto">
               <Button 
                 variant="outline"
                 className="w-full px-8 py-4 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] font-medium text-base uppercase tracking-wider transition-all"
               >
-                Email Us
+                Call to Book
               </Button>
             </a>
           </div>

@@ -44,13 +44,18 @@ const FeaturedRoom = () => {
     return null;
   }
 
+  // Use standard prices based on room type
+  const price = featuredRoom.name.toLowerCase().includes('twin') || featuredRoom.name.toLowerCase().includes('shared') 
+    ? 25000 
+    : 50000;
+    
   const formattedPrice = new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency: 'INR',
     maximumFractionDigits: 0,
-  }).format(featuredRoom.price);
+  }).format(price);
 
-  const displayPrice = `${formattedPrice}/month`;
+  const displayPrice = `${formattedPrice}/${featuredRoom.priceUnit}`;
 
   return (
     <section className="py-20 md:py-28 bg-[#1E1E1E] relative overflow-hidden">
@@ -91,12 +96,16 @@ const FeaturedRoom = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="px-6 py-3 bg-[#D4AF37] text-[#0A0A0A] font-medium text-sm uppercase tracking-wider hover:bg-[#E5C158] transition-all">
-                Book This Room
-              </Button>
-              <Button variant="outline" className="px-6 py-3 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all text-sm uppercase tracking-wider">
-                Take a Virtual Tour
-              </Button>
+              <a href={`/rooms/${featuredRoom.id}`}>
+                <Button className="px-6 py-3 bg-[#D4AF37] text-[#0A0A0A] font-medium text-sm uppercase tracking-wider hover:bg-[#E5C158] transition-all">
+                  View Room Details
+                </Button>
+              </a>
+              <a href={`/rooms/${featuredRoom.id}`}>
+                <Button variant="outline" className="px-6 py-3 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all text-sm uppercase tracking-wider">
+                  Take a Virtual Tour
+                </Button>
+              </a>
             </div>
           </motion.div>
           

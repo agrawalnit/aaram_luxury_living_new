@@ -21,11 +21,16 @@ const MotionCard = ({
   imageUrl, 
   className 
 }: MotionCardProps) => {
+  // Use standard prices based on room type
+  const standardPrice = name.toLowerCase().includes('twin') || name.toLowerCase().includes('shared') 
+    ? 25000 
+    : 50000;
+    
   const formattedPrice = new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency: 'INR',
     maximumFractionDigits: 0,
-  }).format(price);
+  }).format(standardPrice);
 
   const displayPrice = `${formattedPrice}/${priceUnit}`;
 

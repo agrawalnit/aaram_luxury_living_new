@@ -42,15 +42,18 @@ const RoomDetail = () => {
     );
   }
   
-  const formattedPrice = new Intl.NumberFormat('en-US', {
+  // Use standard prices based on room type
+  const price = room.name.toLowerCase().includes('twin') || room.name.toLowerCase().includes('shared') 
+    ? 25000 
+    : 50000;
+    
+  const formattedPrice = new Intl.NumberFormat('en-IN', {
     style: 'currency',
-    currency: 'USD',
-    minimumFractionDigits: 0,
-  }).format(room.price / 100);
+    currency: 'INR',
+    maximumFractionDigits: 0,
+  }).format(price);
   
-  const displayPrice = room.priceUnit === 'night' 
-    ? `${formattedPrice} / night`
-    : `${formattedPrice} / month`;
+  const displayPrice = `${formattedPrice} / ${room.priceUnit}`;
     
   return (
     <div>
