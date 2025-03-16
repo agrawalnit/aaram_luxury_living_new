@@ -5,7 +5,7 @@ import { Link } from "wouter";
 interface MotionCardProps {
   id: number;
   name: string;
-  stayType: string;
+  stayType?: string; // Made optional since we're not using it anymore
   price: number;
   priceUnit: string;
   imageUrl: string;
@@ -27,9 +27,7 @@ const MotionCard = ({
     maximumFractionDigits: 0,
   }).format(price);
 
-  const displayPrice = `${formattedPrice}/month`;
-
-  const displayStayType = stayType === 'short' ? 'Without Kitchen' : 'With Kitchen';
+  const displayPrice = `${formattedPrice}/${priceUnit}`;
 
   return (
     <motion.div
@@ -46,8 +44,7 @@ const MotionCard = ({
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
       <div className="absolute inset-0 flex flex-col justify-end p-6 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-        <span className="text-[#D4AF37] text-xs uppercase tracking-widest">{displayStayType}</span>
-        <h3 className="font-playfair text-xl font-bold mt-1 text-white">{name}</h3>
+        <h3 className="font-playfair text-xl font-bold text-white">{name}</h3>
         <div className="flex justify-between items-center mt-4">
           <span className="text-[#CCCCCC]">{displayPrice}</span>
           <Link href={`/rooms/${id}`} className="text-sm uppercase text-[#D4AF37] hover:text-[#E5C158] tracking-wider flex items-center">

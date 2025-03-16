@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { useQuery } from "@tanstack/react-query";
 import { motion } from "framer-motion";
@@ -6,19 +5,11 @@ import MotionCard from "@/components/ui/motion-card";
 import { Room } from "@shared/schema";
 
 const Rooms = () => {
-  const [filter, setFilter] = useState<string | null>(null);
-
   const { data: rooms, isLoading } = useQuery<Room[]>({
-    queryKey: [filter ? `/api/rooms?stayType=${filter}` : '/api/rooms'],
+    queryKey: ['/api/rooms'],
   });
 
-  const filterClasses = (filterType: string | null) => {
-    return filter === filterType
-      ? "text-sm uppercase tracking-wider text-[#F5F5F5] hover:text-[#D4AF37] transition-all relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-[#D4AF37]"
-      : "text-sm uppercase tracking-wider text-[#CCCCCC] hover:text-[#D4AF37] transition-all";
-  };
-
-  // Initial set of rooms to display (either all 6 or filtered by type)
+  // Initial set of rooms to display (up to 6 rooms)
   const displayedRooms = rooms?.slice(0, 6) || [];
 
   const containerVariants = {
@@ -57,35 +48,7 @@ const Rooms = () => {
           </p>
         </motion.div>
         
-        {/* Room Filters */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          viewport={{ once: true }}
-          className="flex justify-center mb-12"
-        >
-          <div className="inline-flex space-x-8 border-b border-[#1E1E1E] pb-2">
-            <button 
-              onClick={() => setFilter(null)} 
-              className={filterClasses(null)}
-            >
-              All Rooms
-            </button>
-            <button 
-              onClick={() => setFilter('short')} 
-              className={filterClasses('short')}
-            >
-              Without Kitchen
-            </button>
-            <button 
-              onClick={() => setFilter('long')} 
-              className={filterClasses('long')}
-            >
-              With Kitchen
-            </button>
-          </div>
-        </motion.div>
+        {/* No room filters needed */}
         
         {/* Room Grid */}
         {isLoading ? (

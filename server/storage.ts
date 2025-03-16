@@ -53,63 +53,63 @@ export class MemStorage implements IStorage {
   private initializeRooms() {
     const roomData: InsertRoom[] = [
       {
-        name: "Luxury Room with Kitchen (Solo)",
-        description: "Elegant living space with a fully equipped kitchen, perfect for solo occupancy. Features premium amenities and stunning views of Gurugram's Golf Course Road.",
+        name: "Luxury Accommodation",
+        description: "Experience unparalleled luxury in our premium accommodation. Featuring elegant interiors, high-end amenities, and exceptional comfort, our rooms provide a serene retreat in the heart of the city.",
         price: 50000, // ₹50,000
-        stayType: "long",
+        stayType: "general",
         priceUnit: "month",
         imageUrl: "/images/IMG_5120-HDR.jpg",
-        amenities: ["King Size Bed", "Full Kitchen", "Living Area", "High-Speed WiFi", "24/7 Concierge", "Room Service"],
+        amenities: ["Premium Bedding", "High-Speed WiFi", "Room Service", "24/7 Concierge", "Air Conditioning", "Smart TV"],
         featured: true
       },
       {
-        name: "Luxury Room with Kitchen (Twin Sharing)",
-        description: "Elegant living space with a fully equipped kitchen, perfect for twin sharing. Features premium amenities and stunning views of Gurugram's Golf Course Road.",
-        price: 25000, // ₹25,000 per person
-        stayType: "long",
+        name: "Premium Suite",
+        description: "Our premium suites offer an exceptional stay experience with luxurious furnishings and generous space. Perfect for those seeking a refined and comfortable environment.",
+        price: 50000,
+        stayType: "general",
         priceUnit: "month",
         imageUrl: "/images/IMG_5123-HDR.jpg",
-        amenities: ["Twin Beds", "Full Kitchen", "Living Area", "High-Speed WiFi", "24/7 Concierge", "Room Service"],
+        amenities: ["Premium Bedding", "High-Speed WiFi", "Room Service", "24/7 Concierge", "Air Conditioning", "Smart TV"],
         featured: false
       },
       {
-        name: "Premium Room (Solo)",
-        description: "Luxurious accommodation without kitchen, perfect for solo occupancy. Experience unparalleled comfort with premium amenities and elegant decor.",
-        price: 50000, // ₹50,000
-        stayType: "short",
+        name: "Deluxe Accommodation",
+        description: "Unwind in our deluxe accommodation featuring tasteful décor and all the essential amenities for a comfortable stay. A perfect balance of luxury and comfort.",
+        price: 50000,
+        stayType: "general",
         priceUnit: "month",
         imageUrl: "/images/IMG_5135-HDR.jpg",
-        amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
+        amenities: ["Premium Bedding", "High-Speed WiFi", "Room Service", "Air Conditioning", "Smart TV", "Mini Fridge"],
         featured: false
       },
       {
-        name: "Premium Room (Twin Sharing)",
-        description: "Luxurious accommodation without kitchen, perfect for twin sharing. Experience unparalleled comfort with premium amenities and elegant decor.",
-        price: 25000, // ₹25,000 per person
-        stayType: "short",
+        name: "Executive Living Space",
+        description: "Our executive living spaces offer a sophisticated environment with elegant interiors and premium amenities. Perfect for discerning guests who appreciate attention to detail.",
+        price: 50000,
+        stayType: "general",
         priceUnit: "month",
         imageUrl: "/images/IMG_5153-HDR.jpg",
-        amenities: ["Twin Beds", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
+        amenities: ["Premium Bedding", "High-Speed WiFi", "Room Service", "24/7 Concierge", "Air Conditioning", "Smart TV"],
         featured: false
       },
       {
-        name: "Premium Room (Solo)",
-        description: "Luxurious accommodation without kitchen, perfect for solo occupancy. Experience unparalleled comfort with premium amenities and elegant decor.",
-        price: 50000, // ₹50,000
-        stayType: "short",
+        name: "Signature Room",
+        description: "Experience our signature rooms featuring tasteful décor and premium amenities. Designed with your comfort in mind, providing a peaceful retreat after a long day.",
+        price: 50000,
+        stayType: "general",
         priceUnit: "month",
         imageUrl: "/images/IMG_5162-HDR.jpg",
-        amenities: ["King Size Bed", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
+        amenities: ["Premium Bedding", "High-Speed WiFi", "Room Service", "Air Conditioning", "Smart TV", "Rainfall Shower"],
         featured: false
       },
       {
-        name: "Premium Room (Twin Sharing)",
-        description: "Luxurious accommodation without kitchen, perfect for twin sharing. Experience unparalleled comfort with premium amenities and elegant decor.",
-        price: 25000, // ₹25,000 per person
-        stayType: "short",
+        name: "Elegant Living Space",
+        description: "Immerse yourself in elegance with our beautifully appointed living spaces. Featuring high-quality furnishings and amenities, these rooms offer both comfort and style.",
+        price: 50000,
+        stayType: "general",
         priceUnit: "month",
         imageUrl: "/images/IMG_5165-HDR.jpg",
-        amenities: ["Twin Beds", "Rainfall Shower", "City View", "Mini Bar", "Room Service", "Smart TV"],
+        amenities: ["Premium Bedding", "High-Speed WiFi", "Room Service", "Air Conditioning", "Smart TV", "Mini Bar"],
         featured: false
       }
     ];
