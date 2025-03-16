@@ -58,7 +58,7 @@ export class MemStorage implements IStorage {
         price: 50000, // ₹50,000
         stayType: "long",
         priceUnit: "month",
-        imageUrl: "/images/room1.jpg",
+        imageUrl: "/images/IMG_5120-HDR.jpg",
         amenities: ["King Size Bed", "Full Kitchen", "Living Area", "High-Speed WiFi", "24/7 Concierge", "Room Service"],
         featured: true
       },
