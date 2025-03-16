@@ -91,7 +91,7 @@ const Gallery = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-[#D4AF37] uppercase tracking-widest text-sm font-medium">Visual Tour</span>
+          <span className="text-[#F5F5DC] uppercase tracking-widest text-sm font-medium">Visual Tour</span>
           <h2 className="font-playfair font-bold text-3xl md:text-4xl mt-2 mb-4">Property Gallery</h2>
           <p className="text-[#CCCCCC] max-w-2xl mx-auto">
             Explore our stunning spaces through this curated collection of images.

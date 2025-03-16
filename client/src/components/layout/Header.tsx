@@ -66,7 +66,7 @@ const Header = () => {
             ))}
             <a href="/rooms/1#contact">
               <Button 
-                className="ml-4 px-6 py-2 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] bg-transparent transition-all text-sm uppercase tracking-wider"
+                className="ml-4 px-6 py-2 border border-[#F5F5DC] text-[#F5F5DC] hover:bg-[#F5F5DC] hover:text-[#0A0A0A] bg-transparent transition-all text-sm uppercase tracking-wider"
               >
                 Book Now
               </Button>

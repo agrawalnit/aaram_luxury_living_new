@@ -52,7 +52,7 @@ const Amenities = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-[#D4AF37] uppercase tracking-widest text-sm font-medium">Property Features</span>
+          <span className="text-[#F5F5DC] uppercase tracking-widest text-sm font-medium">Property Features</span>
           <h2 className="font-playfair font-bold text-3xl md:text-4xl mt-2 mb-4">Exceptional Amenities</h2>
           <p className="text-[#CCCCCC] max-w-2xl mx-auto">
             Experience a wealth of premium services and facilities designed to enhance your stay.
@@ -70,9 +70,9 @@ const Amenities = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-[#2A2A2A] p-8 rounded-sm hover:shadow-lg hover:shadow-[#D4AF37]/10 transition-all duration-300"
+              className="bg-[#2A2A2A] p-8 rounded-sm hover:shadow-lg hover:shadow-[#F5F5DC]/10 transition-all duration-300"
             >
-              <amenity.icon className="text-[#D4AF37] h-8 w-8 mb-6" />
+              <amenity.icon className="text-[#F5F5DC] h-8 w-8 mb-6" />
               <h3 className="font-playfair text-xl font-bold mb-3">{amenity.title}</h3>
               <p className="text-[#CCCCCC]">
                 {amenity.description}

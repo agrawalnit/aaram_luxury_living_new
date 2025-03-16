@@ -11,17 +11,17 @@ const MissionVision = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-[#D4AF37] uppercase tracking-widest text-sm font-medium">Our Purpose</span>
+          <span className="text-[#F5F5DC] uppercase tracking-widest text-sm font-medium">Our Purpose</span>
           <h2 className="font-playfair font-bold text-3xl md:text-4xl mt-2 mb-4">Mission & Vision</h2>
         </motion.div>
-        
+
         <div className="grid md:grid-cols-2 gap-12">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-[#1A1A1A] p-10 rounded-sm border-l-4 border-[#D4AF37]"
+            className="bg-[#1A1A1A] p-10 rounded-sm border-l-4 border-[#F5F5DC]"
           >
             <h3 className="font-playfair font-bold text-2xl mb-4 text-white">Mission Statement</h3>
             <p className="text-[#CCCCCC] mb-4">
@@ -31,13 +31,13 @@ const MissionVision = () => {
               Our mission is to create a serene and opulent sanctuary where comfort meets sophistication, ensuring every moment spent with us is one of pure indulgence and tranquility.
             </p>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-[#1A1A1A] p-10 rounded-sm border-r-4 border-[#D4AF37]"
+            className="bg-[#1A1A1A] p-10 rounded-sm border-r-4 border-[#F5F5DC]"
           >
             <h3 className="font-playfair font-bold text-2xl mb-4 text-white">Vision Statement</h3>
             <p className="text-[#CCCCCC] mb-4">

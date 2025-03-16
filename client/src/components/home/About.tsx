@@ -12,7 +12,7 @@ const About = () => {
             viewport={{ once: true }}
             className="order-2 md:order-1"
           >
-            <span className="text-[#D4AF37] uppercase tracking-widest text-sm font-medium">Our Story</span>
+            <span className="text-[#F5F5DC] uppercase tracking-widest text-sm font-medium">Our Story</span>
             <h2 className="font-playfair font-bold text-3xl md:text-4xl mt-2 mb-6">A Legacy of Luxury</h2>
             <p className="text-[#CCCCCC] mb-6">
               Aaram Luxury Living was founded with a singular vision: to create an unparalleled living experience that combines the comfort of home with the indulgence of a five-star hotel. Our exclusive property stands as a testament to craftsmanship, attention to detail, and a passion for luxury.
@@ -22,17 +22,17 @@ const About = () => {
             </p>
             <div className="flex items-center space-x-6">
               <div>
-                <span className="block text-[#D4AF37] text-3xl font-playfair font-bold">22</span>
+                <span className="block text-[#F5F5DC] text-3xl font-playfair font-bold">22</span>
                 <span className="text-sm text-[#CCCCCC] uppercase tracking-wide">Luxury Rooms</span>
               </div>
-              <div className="h-12 w-px bg-[#D4AF37]/30"></div>
+              <div className="h-12 w-px bg-[#F5F5DC]/30"></div>
               <div>
-                <span className="block text-[#D4AF37] text-3xl font-playfair font-bold">24/7</span>
+                <span className="block text-[#F5F5DC] text-3xl font-playfair font-bold">24/7</span>
                 <span className="text-sm text-[#CCCCCC] uppercase tracking-wide">Concierge</span>
               </div>
-              <div className="h-12 w-px bg-[#D4AF37]/30"></div>
+              <div className="h-12 w-px bg-[#F5F5DC]/30"></div>
               <div>
-                <span className="block text-[#D4AF37] text-3xl font-playfair font-bold">4★</span>
+                <span className="block text-[#F5F5DC] text-3xl font-playfair font-bold">4★</span>
                 <span className="text-sm text-[#CCCCCC] uppercase tracking-wide">Service</span>
               </div>
             </div>
@@ -51,7 +51,7 @@ const About = () => {
                 className="w-full h-auto object-cover rounded-sm shadow-lg"
               />
             </div>
-            <div className="absolute -bottom-8 -left-8 w-3/4 h-3/4 border-2 border-[#D4AF37] opacity-40 rounded-sm z-0"></div>
+            <div className="absolute -bottom-8 -left-8 w-3/4 h-3/4 border-2 border-[#F5F5DC] opacity-40 rounded-sm z-0"></div>
           </motion.div>
         </div>
       </div>

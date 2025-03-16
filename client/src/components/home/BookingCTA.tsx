@@ -22,7 +22,7 @@ const BookingCTA = () => {
           className="font-playfair font-bold text-3xl md:text-5xl mb-6"
         >
           <span className="block">Experience the Epitome of</span>
-          <span className="block text-[#D4AF37]">Luxury Living</span>
+          <span className="block text-[#F5F5DC]">Luxury Living</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -42,12 +42,12 @@ const BookingCTA = () => {
         >
           <div className="text-center mb-4">
             <p className="text-[#F5F5F5] mb-1">For bookings and inquiries, please contact us at:</p>
-            <p className="text-[#D4AF37] font-medium text-xl">+91 92843 88074</p>
+            <p className="text-[#F5F5DC] font-medium text-xl">+91 92843 88074</p>
           </div>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a href="#rooms" className="w-full sm:w-auto">
               <Button 
-                className="w-full px-8 py-4 bg-[#D4AF37] text-[#0A0A0A] font-medium text-base uppercase tracking-wider hover:bg-[#E5C158] transition-all"
+                className="w-full px-8 py-4 bg-[#F5F5DC] text-[#0A0A0A] font-medium text-base uppercase tracking-wider hover:bg-[#E5C158] transition-all"
               >
                 View Our Rooms
               </Button>
@@ -55,7 +55,7 @@ const BookingCTA = () => {
             <a href="tel:+919284388074" className="w-full sm:w-auto">
               <Button 
                 variant="outline"
-                className="w-full px-8 py-4 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] font-medium text-base uppercase tracking-wider transition-all"
+                className="w-full px-8 py-4 border border-[#F5F5DC] text-[#F5F5DC] hover:bg-[#F5F5DC] hover:text-[#0A0A0A] font-medium text-base uppercase tracking-wider transition-all"
               >
                 Call to Book
               </Button>
