@@ -60,13 +60,6 @@ const BookingCTA = () => {
                 Call to Book
               </Button>
             </a>
-            <a href="/rooms/1#contact"> {/* Added Book Now button */}
-              <Button
-                className="w-full sm:w-auto px-8 py-4 bg-[#D4AF37] text-[#0A0A0A] font-medium text-base uppercase tracking-wider hover:bg-[#B69121] transition-all"
-              >
-                Book Now
-              </Button>
-            </a>
           </div>
         </motion.div>
       </div>
