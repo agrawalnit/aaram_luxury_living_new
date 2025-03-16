@@ -17,9 +17,9 @@ const Hero = () => {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="/images/IMG_5135-HDR.jpg" 
-          alt="Aaram Luxury Living property view" 
-          className="object-cover w-full h-full opacity-50"
+          src="/images/logo-bg.jpeg" 
+          alt="Aaram Luxury Living logo" 
+          className="object-cover w-full h-full opacity-30 scale-125"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/70 to-[#0A0A0A]/80"></div>
       </div>
