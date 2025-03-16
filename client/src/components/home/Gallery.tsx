@@ -10,10 +10,6 @@ import {
 // Gallery images
 const galleryImages = [
   {
-    src: "/images/bar-counter.png",
-    alt: "Aaram Luxury Living bar counter area"
-  },
-  {
     src: "/images/IMG_5116-HDR.jpg",
     alt: "Aaram Luxury Living elegant living space"
   },
