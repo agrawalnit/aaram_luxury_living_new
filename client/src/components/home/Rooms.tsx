@@ -82,19 +82,7 @@ const Rooms = () => {
           </motion.div>
         )}
         
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <Button 
-            className="px-8 py-3 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all text-sm uppercase tracking-wider"
-          >
-            View All Rooms
-          </Button>
-        </motion.div>
+        {/* Removed "View All Rooms" button */}
       </div>
     </section>
   );

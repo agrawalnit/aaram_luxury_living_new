@@ -255,18 +255,18 @@ const RoomDetail = () => {
                     </span>
                   </div>
                   
-                  {/* Book Button */}
-                  <Button className="w-full text-center py-6 bg-[#D4AF37] text-[#0A0A0A] hover:bg-[#E5C158] transition-all">
-                    <span className="uppercase font-medium tracking-wider">Book Now</span>
-                  </Button>
-                  
-                  {/* Or Contact */}
-                  <div className="text-center">
-                    <span className="text-[#CCCCCC]">or</span>
-                    <Button variant="link" className="text-[#D4AF37] hover:text-[#E5C158]">
-                      Contact for Special Requests
-                    </Button>
+                  {/* Contact Info */}
+                  <div className="bg-[#0A0A0A]/30 p-4 rounded-sm mb-4">
+                    <p className="text-center text-[#F5F5F5] mb-2">To book this room, please contact us directly:</p>
+                    <p className="text-center text-[#D4AF37] font-medium text-lg">+91 98765 43210</p>
                   </div>
+                  
+                  {/* Book Button */}
+                  <a href="tel:+919876543210">
+                    <Button className="w-full text-center py-6 bg-[#D4AF37] text-[#0A0A0A] hover:bg-[#E5C158] transition-all">
+                      <span className="uppercase font-medium tracking-wider">Call to Book Now</span>
+                    </Button>
+                  </a>
                 </div>
               </motion.div>
             </div>

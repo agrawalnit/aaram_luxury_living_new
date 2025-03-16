@@ -46,7 +46,7 @@ const About = () => {
           >
             <div className="relative z-10">
               <img 
-                src="/images/about.jpg" 
+                src="/images/IMG_5138-HDR.jpg" 
                 alt="Aaram Luxury Living space" 
                 className="w-full h-auto object-cover rounded-sm shadow-lg"
               />
