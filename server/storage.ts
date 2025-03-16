@@ -53,11 +53,9 @@ export class MemStorage implements IStorage {
   private initializeRooms() {
     const roomData: InsertRoom[] = [
       {
-        name: "Luxury Accommodation",
+        name: "Living Space",
         description: "Experience unparalleled luxury in our premium accommodation. Featuring elegant interiors, high-end amenities, and exceptional comfort, our rooms provide a serene retreat in the heart of the city.",
-        price: 50000, // ₹50,000
         stayType: "general",
-        priceUnit: "month",
         imageUrl: "/images/IMG_5120-HDR.jpg",
         amenities: ["Premium Bedding", "High-Speed WiFi", "Room Service", "24/7 Concierge", "Air Conditioning", "Smart TV"],
         featured: true

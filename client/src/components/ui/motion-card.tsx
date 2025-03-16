@@ -49,9 +49,7 @@ const MotionCard = ({
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
       <div className="absolute inset-0 flex flex-col justify-end p-6 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-        <h3 className="font-playfair text-xl font-bold text-white">{name}</h3>
-        <div className="flex justify-between items-center mt-4">
-          <span className="text-[#CCCCCC]">{displayPrice}</span>
+        <div className="flex justify-end">
           <Link href={`/rooms/${id}`} className="text-sm uppercase text-[#D4AF37] hover:text-[#E5C158] tracking-wider flex items-center">
             View Details <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

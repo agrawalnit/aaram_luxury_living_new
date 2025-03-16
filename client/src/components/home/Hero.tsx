@@ -23,7 +23,7 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/70 to-[#0A0A0A]/80"></div>
       </div>
-      
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ const Hero = () => {
           className="font-playfair font-bold text-4xl md:text-6xl lg:text-7xl mb-6"
         >
           <span className="block">Experience Unrivaled</span>
-          <span className="block text-[#D4AF37]">Luxury Living</span>
+          <span className="block text-[#F5F5DC]">Luxury Living</span>
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
@@ -63,7 +63,7 @@ const Hero = () => {
           </Button>
         </motion.div>
       </div>
-      
+
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
