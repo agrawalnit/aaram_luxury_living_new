@@ -14,6 +14,18 @@ const galleryImages = [
     alt: "Aaram Luxury Living elegant living space"
   },
   {
+    src: "/images/IMG_5120-HDR.jpg",
+    alt: "Aaram Luxury Living luxurious bathroom"
+  },
+  {
+    src: "/images/IMG_5123-HDR.jpg",
+    alt: "Aaram Luxury Living sophisticated workspace"
+  },
+  {
+    src: "/images/IMG_5135-HDR.jpg",
+    alt: "Aaram Luxury Living panoramic views"
+  },
+  {
     src: "/images/IMG_5138-HDR.jpg",
     alt: "Aaram Luxury Living modern kitchen area"
   },
@@ -26,8 +38,20 @@ const galleryImages = [
     alt: "Aaram Luxury Living stylish interior design"
   },
   {
+    src: "/images/IMG_5153-HDR.jpg",
+    alt: "Aaram Luxury Living dining experience"
+  },
+  {
     src: "/images/IMG_5159-HDR.jpg",
     alt: "Aaram Luxury Living premium furniture"
+  },
+  {
+    src: "/images/IMG_5162-HDR.jpg",
+    alt: "Aaram Luxury Living entertainment space"
+  },
+  {
+    src: "/images/IMG_5165-HDR.jpg",
+    alt: "Aaram Luxury Living relaxation corner"
   },
   {
     src: "/images/IMG_5177-HDR.jpg",
@@ -117,11 +141,7 @@ const Gallery = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button 
-            className="px-8 py-3 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all text-sm uppercase tracking-wider"
-          >
-            View Full Gallery
-          </Button>
+          <p className="text-[#CCCCCC]">Click on any image to view in full size</p>
         </motion.div>
       </div>
     </section>
