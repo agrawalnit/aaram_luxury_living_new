@@ -42,7 +42,7 @@ const BookingCTA = () => {
         >
           <div className="text-center mb-4">
             <p className="text-[#F5F5F5] mb-1">For bookings and inquiries, please contact us at:</p>
-            <p className="text-[#D4AF37] font-medium text-xl">+91 98765 43210</p>
+            <p className="text-[#D4AF37] font-medium text-xl">+91 92843 88074</p>
           </div>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a href="#rooms" className="w-full sm:w-auto">
@@ -52,7 +52,7 @@ const BookingCTA = () => {
                 View Our Rooms
               </Button>
             </a>
-            <a href="tel:+919876543210" className="w-full sm:w-auto">
+            <a href="tel:+919284388074" className="w-full sm:w-auto">
               <Button 
                 variant="outline"
                 className="w-full px-8 py-4 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] font-medium text-base uppercase tracking-wider transition-all"
