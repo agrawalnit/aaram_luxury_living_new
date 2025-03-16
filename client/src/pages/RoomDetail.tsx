@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { ChevronDown, Bed, Bath, User, Coffee, Wifi, Tv, Loader2, CalendarIcon, Check, Phone, Mail } from "lucide-react";
+import { ChevronDown, Bed, Bath, User, Coffee, Wifi, Tv, Loader2, CalendarIcon, Check, Phone, Mail, ChevronLeft, ChevronRight } from "lucide-react";
 import { Room } from "@shared/schema";
 import { format } from "date-fns";
 import { motion } from "framer-motion";
@@ -15,8 +15,28 @@ const RoomDetail = () => {
   const [, params] = useRoute("/rooms/:id");
   const roomId = params?.id ? parseInt(params.id) : 0;
   
+  // We don't need these states anymore, but keeping the reference in case
   const [date, setDate] = useState<Date | undefined>(undefined);
   const [guests, setGuests] = useState<number>(1);
+  
+  // Image carousel state
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  // Collection of room images (all property images available)
+  const propertyImages = [
+    '/images/IMG_5116-HDR.jpg',
+    '/images/IMG_5120-HDR.jpg',
+    '/images/IMG_5123-HDR.jpg',
+    '/images/IMG_5135-HDR.jpg',
+    '/images/IMG_5138-HDR.jpg',
+    '/images/IMG_5144-HDR.jpg',
+    '/images/IMG_5150-HDR.jpg',
+    '/images/IMG_5153-HDR.jpg',
+    '/images/IMG_5159-HDR.jpg',
+    '/images/IMG_5162-HDR.jpg',
+    '/images/IMG_5165-HDR.jpg',
+    '/images/IMG_5177-HDR.jpg'
+  ];
   
   const { data: room, isLoading } = useQuery<Room>({
     queryKey: [`/api/rooms/${roomId}`],
@@ -41,6 +61,17 @@ const RoomDetail = () => {
       </div>
     );
   }
+  
+  // Navigation functions for the image carousel
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % propertyImages.length);
+  };
+  
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) => 
+      prevIndex === 0 ? propertyImages.length - 1 : prevIndex - 1
+    );
+  };
   
   // Use standard prices based on room type
   const price = room.name.toLowerCase().includes('twin') || room.name.toLowerCase().includes('shared') 
@@ -71,13 +102,39 @@ const RoomDetail = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                {/* Room Image */}
-                <div className="rounded-sm overflow-hidden mb-8">
-                  <img 
-                    src={room.imageUrl} 
-                    alt={`${room.name} at Aaram Luxury Living`} 
-                    className="w-full h-[500px] object-cover"
-                  />
+                {/* Room Image Carousel */}
+                <div className="rounded-sm overflow-hidden mb-8 relative">
+                  {/* Using additional property images */}
+                  {propertyImages.length > 0 && (
+                    <>
+                      <img 
+                        src={propertyImages[currentImageIndex]} 
+                        alt={`${room.name} at Aaram Luxury Living`} 
+                        className="w-full h-[500px] object-cover transition-opacity duration-500"
+                      />
+                      
+                      {/* Navigation Buttons */}
+                      <div className="absolute inset-0 flex items-center justify-between px-4">
+                        <button 
+                          onClick={prevImage}
+                          className="bg-black/40 text-white p-2 rounded-full hover:bg-black/60 transition-colors"
+                        >
+                          <ChevronLeft size={24} />
+                        </button>
+                        <button 
+                          onClick={nextImage}
+                          className="bg-black/40 text-white p-2 rounded-full hover:bg-black/60 transition-colors"
+                        >
+                          <ChevronRight size={24} />
+                        </button>
+                      </div>
+                      
+                      {/* Image Counter */}
+                      <div className="absolute bottom-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+                        {currentImageIndex + 1} / {propertyImages.length}
+                      </div>
+                    </>
+                  )}
                 </div>
                 
                 {/* Room Info */}
