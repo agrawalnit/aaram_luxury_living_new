@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { ChevronDown, Bed, Bath, User, Coffee, Wifi, Tv, Loader2, CalendarIcon, Check } from "lucide-react";
+import { ChevronDown, Bed, Bath, User, Coffee, Wifi, Tv, Loader2, CalendarIcon, Check, Phone, Mail } from "lucide-react";
 import { Room } from "@shared/schema";
 import { format } from "date-fns";
 import { motion } from "framer-motion";
@@ -188,63 +188,12 @@ const RoomDetail = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="bg-[#1E1E1E] p-6 rounded-sm sticky top-28"
               >
-                <h2 className="font-playfair font-bold text-2xl mb-4">Book This Room</h2>
+                <h2 className="font-playfair font-bold text-2xl mb-4">Contact Us</h2>
                 <p className="text-[#CCCCCC] mb-6">
-                  Select your dates and preferences to check availability and reserve your stay.
+                  To inquire about this room or make a reservation, please contact us directly using the information below.
                 </p>
                 
-                <div className="space-y-6">
-                  {/* Date Picker */}
-                  <div>
-                    <span className="block text-[#F5F5F5] mb-2">Check-in Date</span>
-                    <Popover>
-                      <PopoverTrigger asChild>
-                        <Button
-                          variant="outline"
-                          className="w-full flex justify-between border-[#2A2A2A] bg-[#2A2A2A] hover:bg-[#2A2A2A] hover:text-[#F5F5F5] text-[#F5F5F5]"
-                        >
-                          {date ? format(date, "PPP") : <span>Select date</span>}
-                          <CalendarIcon className="ml-2 h-4 w-4" />
-                        </Button>
-                      </PopoverTrigger>
-                      <PopoverContent className="w-auto p-0 border-[#2A2A2A] bg-[#1E1E1E]">
-                        <Calendar
-                          mode="single"
-                          selected={date}
-                          onSelect={setDate}
-                          initialFocus
-                          className="bg-[#1E1E1E] text-[#F5F5F5]"
-                        />
-                      </PopoverContent>
-                    </Popover>
-                  </div>
-                  
-                  {/* Guest Selection */}
-                  <div>
-                    <span className="block text-[#F5F5F5] mb-2">Guests</span>
-                    <div className="flex border border-[#2A2A2A] rounded-sm">
-                      <Button 
-                        variant="ghost" 
-                        className="text-[#F5F5F5] hover:text-[#D4AF37]"
-                        onClick={() => setGuests(Math.max(1, guests - 1))}
-                        disabled={guests <= 1}
-                      >
-                        -
-                      </Button>
-                      <div className="flex-grow flex items-center justify-center text-[#F5F5F5]">
-                        {guests} {guests === 1 ? "Guest" : "Guests"}
-                      </div>
-                      <Button 
-                        variant="ghost" 
-                        className="text-[#F5F5F5] hover:text-[#D4AF37]"
-                        onClick={() => setGuests(Math.min(4, guests + 1))}
-                        disabled={guests >= 4}
-                      >
-                        +
-                      </Button>
-                    </div>
-                  </div>
-                  
+                <div className="space-y-6">                  
                   {/* Price Display */}
                   <div className="flex justify-between items-center py-4 border-t border-b border-[#2A2A2A]">
                     <span className="text-[#F5F5F5]">
@@ -256,17 +205,34 @@ const RoomDetail = () => {
                   </div>
                   
                   {/* Contact Info */}
-                  <div className="bg-[#0A0A0A]/30 p-4 rounded-sm mb-4">
-                    <p className="text-center text-[#F5F5F5] mb-2">To book this room, please contact us directly:</p>
-                    <p className="text-center text-[#D4AF37] font-medium text-lg">+91 98765 43210</p>
+                  <div className="space-y-4">
+                    <div className="flex items-center">
+                      <Phone className="text-[#D4AF37] mr-3" size={18} />
+                      <a href="tel:+919876543210" className="text-[#F5F5F5] hover:text-[#D4AF37] transition-colors">+91 98765 43210</a>
+                    </div>
+                    <div className="flex items-center">
+                      <Mail className="text-[#D4AF37] mr-3" size={18} />
+                      <a href="mailto:info@aaramluxuryliving.com" className="text-[#F5F5F5] hover:text-[#D4AF37] transition-colors">info@aaramluxuryliving.com</a>
+                    </div>
                   </div>
                   
-                  {/* Book Button */}
-                  <a href="tel:+919876543210">
-                    <Button className="w-full text-center py-6 bg-[#D4AF37] text-[#0A0A0A] hover:bg-[#E5C158] transition-all">
-                      <span className="uppercase font-medium tracking-wider">Call to Book Now</span>
-                    </Button>
-                  </a>
+                  <div className="bg-[#0A0A0A]/30 p-4 rounded-sm">
+                    <p className="text-center text-[#CCCCCC]">Our concierge is available 24/7 to assist with your booking and any inquiries.</p>
+                  </div>
+                  
+                  {/* Contact Buttons */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <a href="tel:+919876543210" className="w-full">
+                      <Button className="w-full text-center py-6 bg-[#D4AF37] text-[#0A0A0A] hover:bg-[#E5C158] transition-all">
+                        <span className="uppercase font-medium tracking-wider">Call Us</span>
+                      </Button>
+                    </a>
+                    <a href="mailto:info@aaramluxuryliving.com" className="w-full">
+                      <Button variant="outline" className="w-full text-center py-6 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all">
+                        <span className="uppercase font-medium tracking-wider">Email Us</span>
+                      </Button>
+                    </a>
+                  </div>
                 </div>
               </motion.div>
             </div>
