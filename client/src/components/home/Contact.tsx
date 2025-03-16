@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -76,14 +75,35 @@ const Contact = () => {
               We're here to answer any questions about our luxury accommodations. Whether you're planning a stay or interested in learning more, our dedicated team is ready to assist you.
             </p>
 
-            <div className="flex items-start">
-              <MapPin className="text-[#D4AF37] w-8" />
-              <div className="ml-4">
-                <h3 className="text-[#F5F5F5] font-medium">Location</h3>
-                <p className="text-[#CCCCCC]">Plot 803, Sector 42, Gurugram, Haryana 122001</p>
+            <div className="space-y-6 mb-8">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.5773803826377!2d77.09018799999999!3d28.4510565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18e0fd9c68cf%3A0xe53c6228c915b02!2sPlot%20803%2C%20Sector%2042%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1700495647404!5m2!1sen!2sin" width="100%" height="300" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+
+              <div className="flex items-start">
+                <MapPin className="text-[#D4AF37] w-8" />
+                <div className="ml-4">
+                  <h3 className="text-[#F5F5F5] font-medium">Location</h3>
+                  <p className="text-[#CCCCCC]">Plot 803, Sector 42, Gurugram, Haryana 122001</p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <Phone className="text-[#D4AF37] w-8" />
+                <div className="ml-4">
+                  <h3 className="text-[#F5F5F5] font-medium">Phone</h3>
+                  <a href="tel:+919284388074" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-colors">+91 92843 88074</a>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <Mail className="text-[#D4AF37] w-8" />
+                <div className="ml-4">
+                  <h3 className="text-[#F5F5F5] font-medium">Email</h3>
+                  <a href="mailto:parth.babbar@aaramluxury.com" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-colors">parth.babbar@aaramluxury.com</a>
+                </div>
               </div>
             </div>
-          </motion.div>
+
+            </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -118,9 +138,10 @@ const Contact = () => {
                       <FormItem>
                         <FormLabel className="block text-[#F5F5F5] mb-2 text-sm">Email Address</FormLabel>
                         <FormControl>
-                          <Input
+                          <Input 
                             {...field}
-                            className="w-full px-4 py-3 bg-[#2A2A2A] border border-[#1E1E1E] focus:border-[#D4AF37] outline-none text-[#F5F5F5] rounded-sm"
+                            type="email" 
+                            className="w-full px-4 py-3 bg-[#2A2A2A] border border-[#1E1E1E] focus:border-[#D4AF37] outline-none text-[#F5F5F5] rounded-sm" 
                             placeholder="john@example.com"
                           />
                         </FormControl>
@@ -137,10 +158,10 @@ const Contact = () => {
                     <FormItem>
                       <FormLabel className="block text-[#F5F5F5] mb-2 text-sm">Subject</FormLabel>
                       <FormControl>
-                        <Input
+                        <Input 
                           {...field}
-                          className="w-full px-4 py-3 bg-[#2A2A2A] border border-[#1E1E1E] focus:border-[#D4AF37] outline-none text-[#F5F5F5] rounded-sm"
-                          placeholder="What's this about?"
+                          className="w-full px-4 py-3 bg-[#2A2A2A] border border-[#1E1E1E] focus:border-[#D4AF37] outline-none text-[#F5F5F5] rounded-sm" 
+                          placeholder="Booking Inquiry"
                         />
                       </FormControl>
                       <FormMessage />

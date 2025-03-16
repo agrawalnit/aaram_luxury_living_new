@@ -50,7 +50,7 @@ const Footer = () => {
               <li><a href="/#rooms" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-all">Long Term Residences</a></li>
               <li><a href="/#amenities" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-all">Concierge Services</a></li>
               <li><a href="/#amenities" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-all">Dining Experience</a></li>
-              <li><a href="/#amenities" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-all">Cafe</a></li>
+              <li><a href="/#amenities" className="text-[#CCCCCC] hover:text-[#D4AF37] transition-all">Spa & Wellness</a></li>
             </ul>
           </div>
         </div>
