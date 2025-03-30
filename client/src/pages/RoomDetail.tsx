@@ -260,7 +260,7 @@ const RoomDetail = () => {
                       {displayPrice}
                     </span>
                     <span className="text-[#CCCCCC]">
-                      {room.priceUnit === 'night' ? 'Minimum stay: 1 night' : 'Minimum stay: 1 month'}
+                      {room.priceUnit === 'night' ? 'Minimum stay: 1 night' : 'Minimum stay: 1 night'}
                     </span>
                   </div>
 
@@ -272,7 +272,7 @@ const RoomDetail = () => {
                     </div>
                     <div className="flex items-center">
                       <Mail className="text-[#F5F5DC] mr-3" size={18} />
-                      <a href="mailto:parth.babbar@aaramluxury.com" className="text-[#F5F5F5] hover:text-[#F5F5DC] transition-colors">parth.babbar@aaramluxury.com</a>
+                      <a href="mailto:contact@aaramluxury.com" className="text-[#F5F5F5] hover:text-[#F5F5DC] transition-colors">contact@aaramluxury.com</a>
                     </div>
                   </div>
 
@@ -287,7 +287,7 @@ const RoomDetail = () => {
                         <span className="uppercase font-medium tracking-wider">Call Us</span>
                       </Button>
                     </a>
-                    <a href="mailto:parth.babbar@aaramluxury.com" className="w-full">
+                    <a href="mailto:contact@aaramluxury.com" className="w-full">
                       <Button variant="outline" className="w-full text-center py-6 border border-[#F5F5DC] text-[#F5F5DC] hover:bg-[#F5F5DC] hover:text-[#0A0A0A] transition-all">
                         <span className="uppercase font-medium tracking-wider">Email Us</span>
                       </Button>
